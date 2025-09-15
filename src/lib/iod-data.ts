@@ -2,9 +2,10 @@ export interface HeroSection {
   heading: string;
   description: string;
   ctaLabel: string;
+  link: string;
 }
 
-export interface iodOutSourcingSection {
+export interface IodOutSourcingSection {
   heading: string;
   leftColumn: string[];
   rightColumn: string[];
@@ -12,7 +13,7 @@ export interface iodOutSourcingSection {
   ctaLabel: string;
 }
 
-export interface iodScopeSection {
+export interface IodScopeSection {
   heading: string;
   description: string;
   bullets: string[];
@@ -23,12 +24,13 @@ export const iodHero: HeroSection = {
   description:
     "Skorzystaj ze sprawdzonego sposobu, dzięki któremu zoptymalizujesz procesy i koszty nadzoru nad ochroną danych osobowych. Wybierz outsourcing funkcji IOD.",
   ctaLabel: "Zapytaj o ofertę",
+  link: "https://www.google.com/",
 };
 
 export const iodQuote: string =
   "„Skuteczny nadzór nad ochroną danych osobowych jest możliwy tylko wtedy, gdy zostanie wyznaczona osoba lub osoby odpowiedzialne za obszar RODO”.";
 
-export const iodOutSourcing: iodOutSourcingSection = {
+export const iodOutSourcing: IodOutSourcingSection = {
   heading: "Kiedy warto pomyśleć o outsourcingu IOD",
   leftColumn: [
     "Nie masz zasobów do tego, aby systematycznie prowadzić dokumentację i coroczne audyty zgodności z przepisami o ochronie danych osobowych.",
@@ -48,7 +50,7 @@ export const iodOutSourcing: iodOutSourcingSection = {
   ctaLabel: "Skontaktuj się z doradcą",
 };
 
-export const iodScope: iodScopeSection = {
+export const iodScope: IodScopeSection = {
   heading: "Jaki jest zakres usługi outsourcing funkcji Inspektora Ochrony Danych",
   description:
     "Outsourcing funkcji Inspektora Ochrony Danych oznacza dla Ciebie stały kontakt z doświadczonymi konsultantami z obszarów prawa, bezpieczeństwa sieci i systemów IT, zarządzania ryzykiem i bezpieczeństwa fizycznego. Usługa ta to również:",
