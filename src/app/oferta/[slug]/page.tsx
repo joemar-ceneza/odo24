@@ -1,15 +1,11 @@
 import HeroSection from "@/components/HeroSection";
 import IodQuoteSection from "@/components/QuoteSection";
-import IodOutSourcingSection from "@/components/IodOutSourcingSection";
-import IodScopeSection from "@/components/IodScopeSection";
 
-export default function OutSourcing() {
+export default function IodScopeSection() {
   return (
-    <section className="text-gray-600">
+    <section className="text-gray-500">
       <HeroSection />
       <IodQuoteSection />
-      <IodOutSourcingSection />
-      <IodScopeSection />
     </section>
   );
 }
