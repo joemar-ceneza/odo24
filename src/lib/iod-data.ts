@@ -11,6 +11,7 @@ export interface IodOutSourcingSection {
   rightColumn: string[];
   footerText: string;
   ctaLabel: string;
+  link: string;
 }
 
 export interface IodScopeSection {
@@ -48,6 +49,7 @@ export const iodOutSourcing: IodOutSourcingSection = {
   ],
   footerText: "Jeżeli borykasz się z takimi problemami, to warto porozmawiać z naszym doradcą.",
   ctaLabel: "Skontaktuj się z doradcą",
+  link: "https://www.google.com/",
 };
 
 export const iodScope: IodScopeSection = {
