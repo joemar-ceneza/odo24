@@ -20,6 +20,13 @@ export interface IodScopeSection {
   bullets: string[];
 }
 
+export interface IodOdo24ServiceSection {
+  heading: string;
+  leftColumn: string[];
+  rightColumn: string[];
+  ctaLabel: string;
+}
+
 export const iodHero: HeroSection = {
   heading: "Outsourcing IOD – Outsourcing funkcji Inspektora Ochrony Danych",
   description:
@@ -63,7 +70,7 @@ export const iodScope: IodScopeSection = {
   ],
 };
 
-export const iodOdo24Service = {
+export const iodOdo24Service: IodOdo24ServiceSection = {
   heading: "Usługa IOD – jak ODO 24 rozwiązuje Twoje problemy",
   leftColumn: [
     "W ODO 24 trzymamy rękę na pulsie – jesteśmy na bieżąco z najnowszymi zmianami w prawie.",
