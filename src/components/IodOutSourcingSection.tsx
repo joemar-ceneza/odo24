@@ -12,25 +12,25 @@ export default function IodOutSourcingSection() {
             <ul className="space-y-6">
               {iodOutSourcing.leftColumn.map((item, idx) => (
                 <li key={`left-${idx}`} className="flex items-start gap-3">
-                  <Image src="/images/icon-check.svg" alt="check" width={20} height={20} className="mt-1" />
-                  <span className="text-gray-800">{item}</span>
+                  <Image src="/images/icon-check.svg" alt="check" width={25} height={25} />
+                  <span>{item}</span>
                 </li>
               ))}
             </ul>
             <ul className="space-y-6">
               {iodOutSourcing.rightColumn.map((item, idx) => (
                 <li key={`right-${idx}`} className="flex items-start gap-3">
-                  <Image src="/images/icon-check.svg" alt="check" width={20} height={20} className="mt-1" />
-                  <span className="text-gray-800">{item}</span>
+                  <Image src="/images/icon-check.svg" alt="check" width={25} height={25} />
+                  <span>{item}</span>
                 </li>
               ))}
             </ul>
           </div>
           <div className="flex flex-col md:flex-row items-center justify-around gap-4 mt-12 text-center">
-            <p className="text-gray-700">{iodOutSourcing.footerText}</p>
+            <p>{iodOutSourcing.footerText}</p>
             <Link
               href="#"
-              className="bg-sky-600 hover:bg-sky-700 text-white font-medium px-6 py-1 rounded-full transition duration-300">
+              className="bg-sky-600 hover:bg-sky-700 text-white font-medium px-6 py-2 rounded-full transition duration-300">
               {iodOutSourcing.ctaLabel}
             </Link>
           </div>
