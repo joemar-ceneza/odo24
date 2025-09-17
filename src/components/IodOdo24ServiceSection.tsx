@@ -19,7 +19,7 @@ export default function IodOdo24ServiceSection() {
             </ul>
             <ul className="space-y-6">
               {iodOdo24Service.rightColumn.map((item, idx) => (
-                <li key={idx} className="flex items-center gap-3 ">
+                <li key={idx} className="flex items-start gap-3 ">
                   <Image src="/images/icon-check.svg" alt="check" width={25} height={25} />
                   <span>{item}</span>
                 </li>
