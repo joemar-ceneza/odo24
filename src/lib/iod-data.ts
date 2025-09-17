@@ -33,6 +33,19 @@ export interface IodDataProtectionSection {
   items: string[];
 }
 
+export interface IodPricingServiceSection {
+  heading: string;
+  description: string;
+  subheading: string;
+  costComponentsHeading: string;
+  costComponents: string[];
+  footNote: string;
+  source: { label: string; url: string };
+  lastUpdate: string;
+  footer: string;
+  ctaLabel: string;
+}
+
 export const iodHero: HeroSection = {
   heading: "Outsourcing IOD – Outsourcing funkcji Inspektora Ochrony Danych",
   description:
@@ -103,13 +116,13 @@ export const iodDataProtection: IodDataProtectionSection = {
   ],
 };
 
-export const iodPricing = {
+export const iodPricingService: IodPricingServiceSection = {
   heading: "Jaka jest cena usługi outsourcingu IOD",
   description:
     "Usługę outsourcingu przygotowujemy tak, aby ograniczyć koszty, a jednocześnie zapewnić Ci niezmiennie jakościowe wsparcie najlepszych ekspertów od ochrony danych. Cena outsourcingu RODO zależy od zakresu usługi. Dopasowujemy go do rzeczywistych i aktualnych potrzeb Twojej firmy.",
   subheading:
     "Poniżej znajdziesz przykładowe porównanie kosztów etatu specjalisty ds. RODO z kosztem outsourcingu Inspektora Ochrony Danych",
-  costComponentsHeading: "Składniki kosztów",
+  costComponentsHeading: "Składniki kosztów:",
   costComponents: [
     "Wynagrodzenie netto",
     "ZUS",
@@ -125,7 +138,7 @@ export const iodPricing = {
   ],
   footNote: "Źródło informacji o wynagrodzeniu na stanowisku inspektora danych osobowych:",
   source: {
-    label: "wynagrodzenia.pl",
+    label: " wynagrodzenia.pl",
     url: "https://wynagrodzenia.pl/moja-placa/ile-zarabia-inspektor-ochrony-danych-osobowych",
   },
   lastUpdate: "Ostatnia aktualizacja: styczeń 2025",
