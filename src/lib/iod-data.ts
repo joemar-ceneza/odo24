@@ -27,6 +27,12 @@ export interface IodOdo24ServiceSection {
   ctaLabel: string;
 }
 
+export interface IodDataProtectionSection {
+  heading: string;
+  description: string;
+  items: string[];
+}
+
 export const iodHero: HeroSection = {
   heading: "Outsourcing IOD – Outsourcing funkcji Inspektora Ochrony Danych",
   description:
@@ -85,7 +91,7 @@ export const iodOdo24Service: IodOdo24ServiceSection = {
   ctaLabel: "Zapytaj o ofertę",
 };
 
-export const iodNeedSection = {
+export const iodDataProtection: IodDataProtectionSection = {
   heading: "Komu jest potrzebny outsourcing funkcji Inspektora Ochrony Danych",
   description:
     "Na usługę outsourcingu funkcji Inspektora Ochrony Danych, najczęściej decydują się zarządy firm, które chcą:",
