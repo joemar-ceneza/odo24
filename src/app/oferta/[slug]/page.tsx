@@ -7,6 +7,7 @@ import IodDataProtectionSection from "@/components/IodDataProtectionSection";
 import IodPricingServiceSection from "@/components/IodPricingServiceSection";
 import IodDeliverablesSection from "@/components/IodDeliverablesSection";
 import IodDutiesSection from "@/components/IodDutiesSection";
+import IodTestimonialsSection from "@/components/IodTestimonialsSection";
 
 export default function OutSourcing() {
   return (
@@ -20,6 +21,7 @@ export default function OutSourcing() {
       <IodPricingServiceSection />
       <IodDeliverablesSection />
       <IodDutiesSection />
+      <IodTestimonialsSection />
     </main>
   );
 }
