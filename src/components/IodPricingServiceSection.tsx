@@ -36,6 +36,14 @@ export default function IodPricingServiceSection() {
           </Link>
         </p>
         <p>{iodPricingService.lastUpdate}</p>
+        <div className="bg-gray-200 flex justify-around items-center rounded-4xl py-6 mt-10">
+          <p>{iodPricingService.footer}</p>
+          <Link
+            href={""}
+            className="bg-sky-600 hover:bg-sky-700 text-white font-medium px-6 py-2 rounded-full transition duration-300">
+            {iodPricingService.ctaLabel}
+          </Link>
+        </div>
       </div>
     </section>
   );
