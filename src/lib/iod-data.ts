@@ -46,6 +46,17 @@ export interface IodPricingServiceSection {
   ctaLabel: string;
 }
 
+export interface IodDeliverablesSection {
+  heading: string;
+  bullets: string[];
+}
+
+export interface IodDutiesSection {
+  header: string;
+  subtitle: string;
+  items: string[];
+}
+
 export const iodHero: HeroSection = {
   heading: "Outsourcing IOD – Outsourcing funkcji Inspektora Ochrony Danych",
   description:
@@ -146,7 +157,7 @@ export const iodPricingService: IodPricingServiceSection = {
   ctaLabel: "Skontaktuj się",
 };
 
-export const iodDeliverablesSection = {
+export const iodDeliverables: IodDeliverablesSection = {
   heading: "Co otrzymujesz w ramach Outsourcingu IOD?",
   bullets: [
     "Wsparcie w prowadzeniu rejestru czynności przetwarzania.",
@@ -157,10 +168,10 @@ export const iodDeliverablesSection = {
   ],
 };
 
-export const iodDuties = {
+export const iodDuties: IodDutiesSection = {
   header: "Od czego zaczynamy wdrożenie obowiązków IOD",
   subtitle: "3 kroki do przekazania funkcji Inspektora Ochrony Danych",
-  item: [
+  items: [
     "Dokładnie określimy sytuację wyjściową – przeprowadzimy audyt",
     "Ocenimy skutki dla ochrony danych i ryzyko",
     "Opracujemy lub zaktualizujemy najważniejsze polityki ochrony oraz procedury przetwarzania danych osobowych",
