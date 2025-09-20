@@ -16,6 +16,7 @@ export interface IodOutSourcingSection {
 
 export interface IodScopeSection {
   image: string;
+  alt: string;
   heading: string;
   description: string;
   bullets: string[];
@@ -168,6 +169,7 @@ export const iodOutSourcing: IodOutSourcingSection = {
 
 export const iodScope: IodScopeSection = {
   image: "/images/man-with-documents.png",
+  alt: "Zespół IOD",
   heading: "Jaki jest zakres usługi outsourcing funkcji Inspektora Ochrony Danych",
   description:
     "Outsourcing funkcji Inspektora Ochrony Danych oznacza dla Ciebie stały kontakt z doświadczonymi konsultantami z obszarów prawa, bezpieczeństwa sieci i systemów IT, zarządzania ryzykiem i bezpieczeństwa fizycznego. Usługa ta to również:",
