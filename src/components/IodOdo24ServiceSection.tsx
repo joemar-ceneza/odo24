@@ -28,7 +28,7 @@ export default function IodOdo24ServiceSection() {
           </div>
           <div className="flex justify-end pt-3">
             <Link
-              href="#"
+              href={iodOdo24Service.link}
               className="bg-sky-600 hover:bg-sky-700 text-white font-medium px-6 py-2 rounded-full transition duration-300">
               {iodOdo24Service.ctaLabel}
             </Link>
