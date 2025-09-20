@@ -10,8 +10,8 @@ export default function IodPricingServiceSection() {
         <p className="py-3">{iodPricingService.description}</p>
         <p className="text-[22px] font-bold text-gray-600 py-3">{iodPricingService.subheading}</p>
         <Image
-          src="/images/outsourcing-rodo-iod-cena.svg"
-          alt="outsourcing-rodo-iod-cena"
+          src={iodPricingService.image}
+          alt={iodPricingService.alt}
           width={500}
           height={500}
           className="w-full my-3"
@@ -39,7 +39,7 @@ export default function IodPricingServiceSection() {
         <div className="bg-gray-200 flex justify-around items-center rounded-4xl py-6 px-5 mt-10 max-lg:flex-col">
           <p>{iodPricingService.footer}</p>
           <Link
-            href={""}
+            href={iodPricingService.link}
             className="bg-sky-600 hover:bg-sky-700 text-white font-medium px-6 py-2 rounded-full transition duration-300 max-lg:mt-5">
             {iodPricingService.ctaLabel}
           </Link>
