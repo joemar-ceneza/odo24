@@ -5,9 +5,9 @@ import Link from "next/link";
 export default function IodTestimonialsSection() {
   return (
     <section>
-      <div className="max-w-[1060px] mx-auto">
+      <div className="max-w-[1060px] mx-auto px-5">
         <h2 className="text-3xl text-gray-600 font-bold my-5">{iodTestimonialsHeader}</h2>
-        <div className="grid grid-cols-2 gap-6 py-7">
+        <div className="grid grid-cols-2 gap-6 py-7 max-md:grid-cols-1">
           {iodTestimonials.map((testimonial, idx) => (
             <article key={idx} className="bg-gray-200 rounded-3xl p-5">
               <div className="flex justify-end items-center my-5">
