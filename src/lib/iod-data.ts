@@ -76,6 +76,52 @@ export interface LogoSlider {
   alt: string;
 }
 
+export interface IodCallToActionSection {
+  icon: string;
+  alt: string;
+  heading: string;
+  description: string;
+  ctaLabel: string;
+}
+
+export interface IodFaqHeaderSection {
+  icon: string;
+  alt: string;
+  header: string;
+}
+
+export interface IodFaq {
+  question: string;
+  answer: string;
+  id?: string;
+}
+
+export interface IodGreatestValueSection {
+  heading: string;
+  image1: string;
+  alt1: string;
+  image2: string;
+  alt2: string;
+}
+
+export interface IodTeamContactsSection {
+  heading: string;
+  description: string;
+  contacts: {
+    image: string;
+    alt: string;
+    name: string;
+    phone: string;
+    email: string;
+  }[];
+  formHeader: string;
+  formImage: string;
+  formAlt: string;
+  formctaLabel: string;
+  formDescription: string;
+  formLink: string;
+}
+
 export const iodHero: HeroSection = {
   heading: "Outsourcing IOD – Outsourcing funkcji Inspektora Ochrony Danych",
   description:
@@ -365,232 +411,106 @@ export const logoSlider: LogoSlider[] = [
   },
 ];
 
-export const iodCallToAction = {
-  icon: "#",
-  title: "Pełnienie funkcji IOD - najwyższe standardy pracy",
-  subtitle:
+export const iodCallToAction: IodCallToActionSection = {
+  icon: "/images/uslugi-pasek.svg",
+  alt: "uslugi-pasek",
+  heading: "Pełnienie funkcji IOD - najwyższe standardy pracy",
+  description:
     "Jesteśmy przekonani, że usługa przejęcia funkcji Inspektora Ochrony Danych, którą Ci proponujemy, to skuteczne narzędzie, aby zapewnić bezpieczeństwo Twojego biznesu.",
-  ctaLabe: "Zapytaj o ofertę",
+  ctaLabel: "Zapytaj o ofertę",
 };
 
-export const iodFaq = [
-  { header: "Outsourcing IOD - pytania i odpowiedzi" },
-  {
-    question: "Ile kosztuje outsourcing IOD?",
-    answer:
-      "Cena outsourcingu IOD jest zazwyczaj znacznie niższa niż koszt zatrudnienia wewnętrznego Inspektora Ochrony Danych. Zależy jednak od wielu czynników, takich jak: zakres usług, wielkość firmy, rodzaj przetwarzanych danych osobowych, branża, liczba pracowników i stopień złożoności procesów przetwarzania danych.",
-  },
-  {
-    question: "Ile kosztuje outsourcing IOD?",
-    answer:
-      "Cena outsourcingu IOD jest zazwyczaj znacznie niższa niż koszt zatrudnienia wewnętrznego Inspektora Ochrony Danych. Zależy jednak od wielu czynników, takich jak: zakres usług, wielkość firmy, rodzaj przetwarzanych danych osobowych, branża, liczba pracowników i stopień złożoności procesów przetwarzania danych.",
-  },
-  {
-    question: "Ile kosztuje outsourcing IOD?",
-    answer:
-      "Cena outsourcingu IOD jest zazwyczaj znacznie niższa niż koszt zatrudnienia wewnętrznego Inspektora Ochrony Danych. Zależy jednak od wielu czynników, takich jak: zakres usług, wielkość firmy, rodzaj przetwarzanych danych osobowych, branża, liczba pracowników i stopień złożoności procesów przetwarzania danych.",
-  },
-  {
-    question: "Ile kosztuje outsourcing IOD?",
-    answer:
-      "Cena outsourcingu IOD jest zazwyczaj znacznie niższa niż koszt zatrudnienia wewnętrznego Inspektora Ochrony Danych. Zależy jednak od wielu czynników, takich jak: zakres usług, wielkość firmy, rodzaj przetwarzanych danych osobowych, branża, liczba pracowników i stopień złożoności procesów przetwarzania danych.",
-  },
-  {
-    question: "Ile kosztuje outsourcing IOD?",
-    answer:
-      "Cena outsourcingu IOD jest zazwyczaj znacznie niższa niż koszt zatrudnienia wewnętrznego Inspektora Ochrony Danych. Zależy jednak od wielu czynników, takich jak: zakres usług, wielkość firmy, rodzaj przetwarzanych danych osobowych, branża, liczba pracowników i stopień złożoności procesów przetwarzania danych.",
-  },
-  {
-    question: "Ile kosztuje outsourcing IOD?",
-    answer:
-      "Cena outsourcingu IOD jest zazwyczaj znacznie niższa niż koszt zatrudnienia wewnętrznego Inspektora Ochrony Danych. Zależy jednak od wielu czynników, takich jak: zakres usług, wielkość firmy, rodzaj przetwarzanych danych osobowych, branża, liczba pracowników i stopień złożoności procesów przetwarzania danych.",
-  },
-  {
-    question: "Ile kosztuje outsourcing IOD?",
-    answer:
-      "Cena outsourcingu IOD jest zazwyczaj znacznie niższa niż koszt zatrudnienia wewnętrznego Inspektora Ochrony Danych. Zależy jednak od wielu czynników, takich jak: zakres usług, wielkość firmy, rodzaj przetwarzanych danych osobowych, branża, liczba pracowników i stopień złożoności procesów przetwarzania danych.",
-  },
-  {
-    question: "Ile kosztuje outsourcing IOD?",
-    answer:
-      "Cena outsourcingu IOD jest zazwyczaj znacznie niższa niż koszt zatrudnienia wewnętrznego Inspektora Ochrony Danych. Zależy jednak od wielu czynników, takich jak: zakres usług, wielkość firmy, rodzaj przetwarzanych danych osobowych, branża, liczba pracowników i stopień złożoności procesów przetwarzania danych.",
-  },
-  {
-    question: "Ile kosztuje outsourcing IOD?",
-    answer:
-      "Cena outsourcingu IOD jest zazwyczaj znacznie niższa niż koszt zatrudnienia wewnętrznego Inspektora Ochrony Danych. Zależy jednak od wielu czynników, takich jak: zakres usług, wielkość firmy, rodzaj przetwarzanych danych osobowych, branża, liczba pracowników i stopień złożoności procesów przetwarzania danych.",
-  },
-  {
-    question: "Ile kosztuje outsourcing IOD?",
-    answer:
-      "Cena outsourcingu IOD jest zazwyczaj znacznie niższa niż koszt zatrudnienia wewnętrznego Inspektora Ochrony Danych. Zależy jednak od wielu czynników, takich jak: zakres usług, wielkość firmy, rodzaj przetwarzanych danych osobowych, branża, liczba pracowników i stopień złożoności procesów przetwarzania danych.",
-  },
-];
-
-export const iodGreatestValue = {
-  heading: "The greatest value is the trust of our customers",
+export const iodFaqHeader: IodFaqHeaderSection = {
+  icon: "/images/piodicon.svg",
+  alt: "piodicon",
+  header: "Outsourcing IOD - pytania i odpowiedzi",
 };
 
-export const teamContacts = [
+export const iodFaq: IodFaq[] = [
   {
-    header: "W czym Ci możemy pomóc?",
-    description: "Write or call, we will find a solution",
+    question: "Ile kosztuje outsourcing IOD?",
+    answer:
+      "Cena outsourcingu IOD jest zazwyczaj znacznie niższa niż koszt zatrudnienia wewnętrznego Inspektora Ochrony Danych. Zależy jednak od wielu czynników, takich jak: zakres usług, wielkość firmy, rodzaj przetwarzanych danych osobowych, branża, liczba pracowników i stopień złożoności procesów przetwarzania danych.",
   },
   {
-    name: "Cezary Lutyński",
-    phone: "+48 690 957 609 , 22 740 99",
-    email: "96ujemy@odo24.pl",
-    image: "#",
+    question: "Ile kosztuje outsourcing IOD?",
+    answer:
+      "Cena outsourcingu IOD jest zazwyczaj znacznie niższa niż koszt zatrudnienia wewnętrznego Inspektora Ochrony Danych. Zależy jednak od wielu czynników, takich jak: zakres usług, wielkość firmy, rodzaj przetwarzanych danych osobowych, branża, liczba pracowników i stopień złożoności procesów przetwarzania danych.",
   },
   {
-    name: "Cezary Lutyński",
-    phone: "+48 690 957 609 , 22 740 99",
-    email: "96ujemy@odo24.pl",
-    image: "#",
+    question: "Ile kosztuje outsourcing IOD?",
+    answer:
+      "Cena outsourcingu IOD jest zazwyczaj znacznie niższa niż koszt zatrudnienia wewnętrznego Inspektora Ochrony Danych. Zależy jednak od wielu czynników, takich jak: zakres usług, wielkość firmy, rodzaj przetwarzanych danych osobowych, branża, liczba pracowników i stopień złożoności procesów przetwarzania danych.",
+  },
+  {
+    question: "Ile kosztuje outsourcing IOD?",
+    answer:
+      "Cena outsourcingu IOD jest zazwyczaj znacznie niższa niż koszt zatrudnienia wewnętrznego Inspektora Ochrony Danych. Zależy jednak od wielu czynników, takich jak: zakres usług, wielkość firmy, rodzaj przetwarzanych danych osobowych, branża, liczba pracowników i stopień złożoności procesów przetwarzania danych.",
+  },
+  {
+    question: "Ile kosztuje outsourcing IOD?",
+    answer:
+      "Cena outsourcingu IOD jest zazwyczaj znacznie niższa niż koszt zatrudnienia wewnętrznego Inspektora Ochrony Danych. Zależy jednak od wielu czynników, takich jak: zakres usług, wielkość firmy, rodzaj przetwarzanych danych osobowych, branża, liczba pracowników i stopień złożoności procesów przetwarzania danych.",
+  },
+  {
+    question: "Ile kosztuje outsourcing IOD?",
+    answer:
+      "Cena outsourcingu IOD jest zazwyczaj znacznie niższa niż koszt zatrudnienia wewnętrznego Inspektora Ochrony Danych. Zależy jednak od wielu czynników, takich jak: zakres usług, wielkość firmy, rodzaj przetwarzanych danych osobowych, branża, liczba pracowników i stopień złożoności procesów przetwarzania danych.",
+  },
+  {
+    question: "Ile kosztuje outsourcing IOD?",
+    answer:
+      "Cena outsourcingu IOD jest zazwyczaj znacznie niższa niż koszt zatrudnienia wewnętrznego Inspektora Ochrony Danych. Zależy jednak od wielu czynników, takich jak: zakres usług, wielkość firmy, rodzaj przetwarzanych danych osobowych, branża, liczba pracowników i stopień złożoności procesów przetwarzania danych.",
+  },
+  {
+    question: "Ile kosztuje outsourcing IOD?",
+    answer:
+      "Cena outsourcingu IOD jest zazwyczaj znacznie niższa niż koszt zatrudnienia wewnętrznego Inspektora Ochrony Danych. Zależy jednak od wielu czynników, takich jak: zakres usług, wielkość firmy, rodzaj przetwarzanych danych osobowych, branża, liczba pracowników i stopień złożoności procesów przetwarzania danych.",
+  },
+  {
+    question: "Ile kosztuje outsourcing IOD?",
+    answer:
+      "Cena outsourcingu IOD jest zazwyczaj znacznie niższa niż koszt zatrudnienia wewnętrznego Inspektora Ochrony Danych. Zależy jednak od wielu czynników, takich jak: zakres usług, wielkość firmy, rodzaj przetwarzanych danych osobowych, branża, liczba pracowników i stopień złożoności procesów przetwarzania danych.",
+  },
+  {
+    question: "Ile kosztuje outsourcing IOD?",
+    answer:
+      "Cena outsourcingu IOD jest zazwyczaj znacznie niższa niż koszt zatrudnienia wewnętrznego Inspektora Ochrony Danych. Zależy jednak od wielu czynników, takich jak: zakres usług, wielkość firmy, rodzaj przetwarzanych danych osobowych, branża, liczba pracowników i stopień złożoności procesów przetwarzania danych.",
   },
 ];
 
-export const footerLinks = [
-  {
-    tile: "Ochrona danych osobowych:",
-    links: [
-      {
-        label: "Audyt zgodności",
-        link: "#",
-      },
-      {
-        label: "Obsługa RODO - bieżące wsparcie",
-        link: "#",
-      },
-      {
-        label: "DPIA i analiza ryzyka",
-        link: "#",
-      },
-      {
-        label: "Kontrola UODO",
-        link: "#",
-      },
-      {
-        label: "Przejęcie funkcji IOD",
-        link: "#",
-      },
-      {
-        label: "Wdrożenie RODO",
-        link: "#",
-      },
-    ],
-  },
-  {
-    tile: "Cyberbezpieczeństwo:",
-    links: [
-      {
-        label: "Wdrożenie NIS2",
-        link: "#",
-      },
-      {
-        label: "Wdrożenie ISO 27001",
-        link: "#",
-      },
-      {
-        label: "Audyt Wewnętrzny ISO 27001",
-        link: "#",
-      },
-      {
-        label: "Wdrożenie ISO 22301 (BCM)",
-        link: "#",
-      },
-      {
-        label: "Badanie podatności zasobów informatycznych",
-        link: "#",
-      },
-    ],
-  },
-  {
-    tile: "Szkolenia:",
-    links: [
-      {
-        label: "WdrSzkolenia otwarte online",
-        link: "#",
-      },
-      {
-        label: "Szkolenia zamknięte",
-        link: "#",
-      },
-      {
-        label: "E-learning",
-        link: "#",
-      },
-    ],
-  },
-  {
-    tile: "Wiedza:",
-    links: [
-      {
-        label: "ABC RODO",
-        link: "#",
-      },
-      {
-        label: "Biuletyn",
-        link: "#",
-      },
-      {
-        label: "Blog",
-        link: "#",
-      },
-      {
-        label: "Webinary RODO",
-        link: "#",
-      },
-      {
-        label: "RODO Nawigator online",
-        link: "#",
-      },
-      {
-        label: "RODO Migawki",
-        link: "#",
-      },
-      {
-        label: "Poradniki i przewodniki RODO",
-        link: "#",
-      },
-      {
-        label: "Pytania i odpowiedzi",
-        link: "#",
-      },
-    ],
-  },
-  {
-    tile: "Aspekty prawne:",
-    links: [
-      {
-        label: "Regulamin ŚUDE",
-        link: "#",
-      },
-      {
-        label: "Polityka prywatności",
-        link: "#",
-      },
-      {
-        label: "Regulamin szkoleń otwartych",
-        link: "#",
-      },
-      {
-        label: "Polityka cookies",
-        link: "#",
-      },
-    ],
-  },
-  {
-    tile: "Kontakt:",
-    links: [
-      {
-        label: "Zapytaj o ofertę",
-        link: "#",
-      },
-      {
-        label: "Zadzwoń 22 740 99 00 (pon. - pt.: 8.00-17.00)",
-        link: "#",
-      },
-    ],
-  },
-];
+export const iodGreatestValue: IodGreatestValueSection = {
+  heading: "Największą wartość stanowi zaufanie naszych klientów",
+  image1: "/images/maciej-kaczmarski-o-nas-page.png",
+  alt1: "maciej-kaczmarski-o-nas-page",
+  image2: "/images/logo-klientow-odo24-onas-page.png",
+  alt2: "logo-klientow-odo24-onas-page",
+};
+
+export const iodTeamContacts: IodTeamContactsSection = {
+  heading: "W czym Ci możemy pomóc?",
+  description: "Napisz lub zadzwoń, znajdziemy rozwiązanie",
+  contacts: [
+    {
+      image: "/images/zespol-odo24-celu.jpg",
+      alt: "zespol-odo24-celu",
+      name: "Cezary Lutyński",
+      phone: "+48 690 957 609 , 22 740 99",
+      email: "96ujemy@odo24.pl",
+    },
+    {
+      image: "/images/zespol-odo24-maku.jpg",
+      alt: "zespol-odo24-maku",
+      name: "Cezary Lutyński",
+      phone: "+48 690 957 609 , 22 740 99",
+      email: "96ujemy@odo24.pl",
+    },
+  ],
+  formHeader: "Skorzystaj z formularza",
+  formImage: "/images/odo24-zapytaj-o-oferte-formularz-new.gif",
+  formAlt: "odo24-zapytaj-o-oferte-formularz-new",
+  formctaLabel: "Skontaktuj się",
+  formDescription:
+    "Administratorem przesłanych danych osobowych będzie ODO 24 sp. z o.o. z siedzibą w Warszawie przy ul. Kamionkowskiej 45. Twoje dane będą przetwarzane w celu przygotowania, przesłania oraz archiwizacji oferty współpracy. Więcej informacji na ten temat znajduje się w",
+  formLink: "Polityce Prywatności",
+};
