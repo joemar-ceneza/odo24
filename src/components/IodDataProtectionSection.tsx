@@ -5,7 +5,7 @@ export default function IodDataProtectionSection() {
   return (
     <section>
       <div className="max-w-[1030px] flex justify-between items-center mx-auto px-5 max-lg:flex-col">
-        <div className="">
+        <div>
           <p className="text-3xl font-bold text-gray-600 my-5">{iodDataProtection.heading}</p>
           <p className="my-5">{iodDataProtection.description}</p>
           <ul className="space-y-4">

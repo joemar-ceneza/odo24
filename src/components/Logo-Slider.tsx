@@ -9,7 +9,7 @@ import "swiper/css/autoplay";
 
 export default function LogoSlider() {
   return (
-    <section className="">
+    <section>
       <Swiper
         modules={[Autoplay]}
         spaceBetween={0}
