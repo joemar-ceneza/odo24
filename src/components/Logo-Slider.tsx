@@ -12,7 +12,7 @@ export default function LogoSlider() {
     <section className="">
       <Swiper
         modules={[Autoplay]}
-        spaceBetween={30}
+        spaceBetween={0}
         slidesPerView={5}
         loop={true}
         autoplay={{
@@ -22,12 +22,14 @@ export default function LogoSlider() {
         }}
         breakpoints={{
           0: { slidesPerView: 2 },
-          576: { slidesPerView: 5 },
-          768: { slidesPerView: 8 },
-          992: { slidesPerView: 10 },
-          1200: { slidesPerView: 15 },
+          576: { slidesPerView: 3 },
+          768: { slidesPerView: 4 },
+          992: { slidesPerView: 6 },
+          1200: { slidesPerView: 8 },
+          1500: { slidesPerView: 10 },
+          2300: { slidesPerView: 18 },
         }}
-        className="mySwiper">
+        className="">
         {logoSlider.map((item, idx) => (
           <SwiperSlide key={idx}>
             <div className="flex items-center justify-center p-4 h-20">
@@ -36,7 +38,7 @@ export default function LogoSlider() {
                 alt={item.alt}
                 width={120}
                 height={60}
-                className="object-contain transition-all duration-300"
+                className="object-contain transition-all duration-300 min-w-[120px]"
                 style={{ height: "auto", maxWidth: "100%" }}
               />
             </div>
