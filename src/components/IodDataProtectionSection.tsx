@@ -20,8 +20,8 @@ export default function IodDataProtectionSection() {
           </ul>
         </div>
         <Image
-          src="/images/man-giving-gdrp-circle.png"
-          alt="man-giving-gdrp-circle"
+          src={iodDataProtection.image}
+          alt={iodDataProtection.alt}
           width={500}
           height={500}
           className="mt-16 max-lg:mt-5"
