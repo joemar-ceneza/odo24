@@ -8,6 +8,11 @@ import IodPricingServiceSection from "@/components/IodPricingServiceSection";
 import IodDeliverablesSection from "@/components/IodDeliverablesSection";
 import IodDutiesSection from "@/components/IodDutiesSection";
 import IodTestimonialsSection from "@/components/IodTestimonialsSection";
+import LogoSlider from "@/components/Logo-Slider";
+import IodCallToActionSection from "@/components/IodCallToActionSection";
+import IodFaqSection from "@/components/IodFaqSection";
+import IodGreatValue from "@/components/IodGreatestValueSection";
+import IodTeamContactsSection from "@/components/IodTeamContactsSection";
 
 export default function OutSourcing() {
   return (
@@ -22,6 +27,11 @@ export default function OutSourcing() {
       <IodDeliverablesSection />
       <IodDutiesSection />
       <IodTestimonialsSection />
+      <LogoSlider />
+      <IodCallToActionSection />
+      <IodFaqSection />
+      <IodGreatValue />
+      <IodTeamContactsSection />
     </main>
   );
 }
