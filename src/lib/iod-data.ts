@@ -15,6 +15,7 @@ export interface IodOutSourcingSection {
 }
 
 export interface IodScopeSection {
+  image: string;
   heading: string;
   description: string;
   bullets: string[];
@@ -25,15 +26,20 @@ export interface IodOdo24ServiceSection {
   leftColumn: string[];
   rightColumn: string[];
   ctaLabel: string;
+  link: string;
 }
 
 export interface IodDataProtectionSection {
   heading: string;
   description: string;
   items: string[];
+  image: string;
+  alt: string;
 }
 
 export interface IodPricingServiceSection {
+  image: string;
+  alt: string;
   heading: string;
   description: string;
   subheading: string;
@@ -44,14 +50,19 @@ export interface IodPricingServiceSection {
   lastUpdate: string;
   footer: string;
   ctaLabel: string;
+  link: string;
 }
 
 export interface IodDeliverablesSection {
+  image: string;
+  alt: string;
   heading: string;
   bullets: string[];
 }
 
 export interface IodDutiesSection {
+  image: string;
+  alt: string;
   header: string;
   subtitle: string;
   items: string[];
@@ -77,11 +88,12 @@ export interface LogoSlider {
 }
 
 export interface IodCallToActionSection {
-  icon: string;
+  image: string;
   alt: string;
   heading: string;
   description: string;
   ctaLabel: string;
+  link: string;
 }
 
 export interface IodFaqHeaderSection {
@@ -155,6 +167,7 @@ export const iodOutSourcing: IodOutSourcingSection = {
 };
 
 export const iodScope: IodScopeSection = {
+  image: "/images/man-with-documents.png",
   heading: "Jaki jest zakres usługi outsourcing funkcji Inspektora Ochrony Danych",
   description:
     "Outsourcing funkcji Inspektora Ochrony Danych oznacza dla Ciebie stały kontakt z doświadczonymi konsultantami z obszarów prawa, bezpieczeństwa sieci i systemów IT, zarządzania ryzykiem i bezpieczeństwa fizycznego. Usługa ta to również:",
@@ -178,6 +191,7 @@ export const iodOdo24Service: IodOdo24ServiceSection = {
     "Mierzymy skuteczność środków bezpieczeństwa.",
   ],
   ctaLabel: "Zapytaj o ofertę",
+  link: "https://www.google.com/",
 };
 
 export const iodDataProtection: IodDataProtectionSection = {
@@ -190,9 +204,13 @@ export const iodDataProtection: IodDataProtectionSection = {
     "zredukować wysokie koszty stałe,",
     "szybkiej reakcji ekspertów na biznesowe potrzeby.",
   ],
+  image: "/images/man-giving-gdrp-circle.png",
+  alt: "man-giving-gdrp-circle",
 };
 
 export const iodPricingService: IodPricingServiceSection = {
+  image: "/images/outsourcing-rodo-iod-cena.svg",
+  alt: "outsourcing-rodo-iod-cena",
   heading: "Jaka jest cena usługi outsourcingu IOD",
   description:
     "Usługę outsourcingu przygotowujemy tak, aby ograniczyć koszty, a jednocześnie zapewnić Ci niezmiennie jakościowe wsparcie najlepszych ekspertów od ochrony danych. Cena outsourcingu RODO zależy od zakresu usługi. Dopasowujemy go do rzeczywistych i aktualnych potrzeb Twojej firmy.",
@@ -220,9 +238,12 @@ export const iodPricingService: IodPricingServiceSection = {
   lastUpdate: "Ostatnia aktualizacja: styczeń 2025",
   footer: "Jeżeli chcesz skalkulować koszt miesięczny usługi, to warto porozmawiać z naszym doradcą.",
   ctaLabel: "Skontaktuj się",
+  link: "https://www.google.com/",
 };
 
 export const iodDeliverables: IodDeliverablesSection = {
+  image: "/images/man-juggling-currency.png",
+  alt: "man-juggling-currency",
   heading: "Co otrzymujesz w ramach Outsourcingu IOD?",
   bullets: [
     "Wsparcie w prowadzeniu rejestru czynności przetwarzania.",
@@ -234,6 +255,8 @@ export const iodDeliverables: IodDeliverablesSection = {
 };
 
 export const iodDuties: IodDutiesSection = {
+  image: "/images/chase-rodo.png",
+  alt: "chase-rodo",
   header: "Od czego zaczynamy wdrożenie obowiązków IOD",
   subtitle: "3 kroki do przekazania funkcji Inspektora Ochrony Danych",
   items: [
@@ -412,12 +435,13 @@ export const logoSlider: LogoSlider[] = [
 ];
 
 export const iodCallToAction: IodCallToActionSection = {
-  icon: "/images/uslugi-pasek.svg",
+  image: "/images/uslugi-pasek.svg",
   alt: "uslugi-pasek",
   heading: "Pełnienie funkcji IOD - najwyższe standardy pracy",
   description:
     "Jesteśmy przekonani, że usługa przejęcia funkcji Inspektora Ochrony Danych, którą Ci proponujemy, to skuteczne narzędzie, aby zapewnić bezpieczeństwo Twojego biznesu.",
   ctaLabel: "Zapytaj o ofertę",
+  link: "https://www.google.com/",
 };
 
 export const iodFaqHeader: IodFaqHeaderSection = {
