@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function IodPricingServiceSection() {
   return (
     <section className="py-10">
-      <div className="max-w-[1060px] mx-auto">
+      <div className="max-w-[1060px] mx-auto px-5">
         <h2 className="text-3xl font-bold text-gray-600">{iodPricingService.heading}</h2>
         <p className="py-3">{iodPricingService.description}</p>
         <p className="text-[22px] font-bold text-gray-600 py-3">{iodPricingService.subheading}</p>
@@ -36,11 +36,11 @@ export default function IodPricingServiceSection() {
           </Link>
         </p>
         <p>{iodPricingService.lastUpdate}</p>
-        <div className="bg-gray-200 flex justify-around items-center rounded-4xl py-6 mt-10">
+        <div className="bg-gray-200 flex justify-around items-center rounded-4xl py-6 px-5 mt-10 max-lg:flex-col">
           <p>{iodPricingService.footer}</p>
           <Link
             href={""}
-            className="bg-sky-600 hover:bg-sky-700 text-white font-medium px-6 py-2 rounded-full transition duration-300">
+            className="bg-sky-600 hover:bg-sky-700 text-white font-medium px-6 py-2 rounded-full transition duration-300 max-lg:mt-5">
             {iodPricingService.ctaLabel}
           </Link>
         </div>

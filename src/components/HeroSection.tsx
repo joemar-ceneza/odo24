@@ -10,7 +10,7 @@ export default function IodHeroSection() {
         <div className="flex items-center justify-center my-5">
           <Link
             href={iodHero.link}
-            className="bg-sky-600 hover:bg-sky-700 text-white font-medium py-2 px-6 rounded-full transition duration-300">
+            className="bg-sky-600 hover:bg-sky-700 text-white font-medium py-2 px-6 rounded-full transition duration-300 uppercase">
             {iodHero.ctaLabel}
           </Link>
         </div>

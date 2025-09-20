@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function IodDataProtectionSection() {
   return (
     <section>
-      <div className="max-w-[1030px] flex justify-between items-center mx-auto">
+      <div className="max-w-[1030px] flex justify-between items-center mx-auto px-5 max-lg:flex-col">
         <div className="">
           <p className="text-3xl font-bold text-gray-600 my-5">{iodDataProtection.heading}</p>
           <p className="my-5">{iodDataProtection.description}</p>
@@ -24,7 +24,7 @@ export default function IodDataProtectionSection() {
           alt="man-giving-gdrp-circle"
           width={500}
           height={500}
-          className="mt-16"
+          className="mt-16 max-lg:mt-5"
         />
       </div>
     </section>

@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function IodDeliverablesSection() {
   return (
     <section className=" bg-sky-950 text-white">
-      <div className="max-w-[1060px] mx-auto flex items-center">
+      <div className="max-w-[1060px] mx-auto flex items-center px-5 max-lg:flex-col">
         <Image
           src="/images/man-juggling-currency.png"
           alt="man-juggling-currency"
