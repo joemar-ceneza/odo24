@@ -5,6 +5,12 @@ export interface HeroSection {
   link: string;
 }
 
+export interface IodQuoteSection {
+  quote: string;
+  image: string;
+  alt: string;
+}
+
 export interface IodOutSourcingSection {
   heading: string;
   leftColumn: string[];
@@ -43,7 +49,7 @@ export interface IodPricingServiceSection {
   alt: string;
   heading: string;
   description: string;
-  subheading: string;
+  subHeading: string;
   costComponentsHeading: string;
   costComponents: string[];
   footNote: string;
@@ -143,8 +149,12 @@ export const iodHero: HeroSection = {
   link: "https://www.google.com/",
 };
 
-export const iodQuote: string =
-  "„Skuteczny nadzór nad ochroną danych osobowych jest możliwy tylko wtedy, gdy zostanie wyznaczona osoba lub osoby odpowiedzialne za obszar RODO”.";
+export const iodQuote: IodQuoteSection = {
+  quote:
+    "„Skuteczny nadzór nad ochroną danych osobowych jest możliwy tylko wtedy, gdy zostanie wyznaczona osoba lub osoby odpowiedzialne za obszar RODO”.",
+  image: "/images/outsourcing-iod-zespol-odo-24-a.png",
+  alt: "Zespół IOD",
+};
 
 export const iodOutSourcing: IodOutSourcingSection = {
   heading: "Kiedy warto pomyśleć o outsourcingu IOD",
@@ -216,9 +226,9 @@ export const iodPricingService: IodPricingServiceSection = {
   heading: "Jaka jest cena usługi outsourcingu IOD",
   description:
     "Usługę outsourcingu przygotowujemy tak, aby ograniczyć koszty, a jednocześnie zapewnić Ci niezmiennie jakościowe wsparcie najlepszych ekspertów od ochrony danych. Cena outsourcingu RODO zależy od zakresu usługi. Dopasowujemy go do rzeczywistych i aktualnych potrzeb Twojej firmy.",
-  subheading:
+  subHeading:
     "Poniżej znajdziesz przykładowe porównanie kosztów etatu specjalisty ds. RODO z kosztem outsourcingu Inspektora Ochrony Danych",
-  costComponentsHeading: "Składniki kosztów:",
+  costComponentsHeading: "Składniki kosztó:",
   costComponents: [
     "Wynagrodzenie netto",
     "ZUS",
@@ -235,7 +245,7 @@ export const iodPricingService: IodPricingServiceSection = {
   footNote: "Źródło informacji o wynagrodzeniu na stanowisku inspektora danych osobowych:",
   source: {
     label: " wynagrodzenia.pl",
-    url: "https://wynagrodzenia.pl/moja-placa/ile-zarabia-inspektor-ochrony-danych-osobowych",
+    url: "https://www.google.com/",
   },
   lastUpdate: "Ostatnia aktualizacja: styczeń 2025",
   footer: "Jeżeli chcesz skalkulować koszt miesięczny usługi, to warto porozmawiać z naszym doradcą.",
