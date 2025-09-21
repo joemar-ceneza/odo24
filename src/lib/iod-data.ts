@@ -70,8 +70,8 @@ export interface IodDeliverablesSection {
 export interface IodDutiesSection {
   image: string;
   alt: string;
-  header: string;
-  subtitle: string;
+  heading: string;
+  subHeader: string;
   items: string[];
 }
 
@@ -136,7 +136,7 @@ export interface IodTeamContactsSection {
   formHeader: string;
   formImage: string;
   formAlt: string;
-  formctaLabel: string;
+  formCtaLabel: string;
   formDescription: string;
   formLink: string;
 }
@@ -269,8 +269,8 @@ export const iodDeliverables: IodDeliverablesSection = {
 export const iodDuties: IodDutiesSection = {
   image: "/images/chase-rodo.png",
   alt: "chase-rodo",
-  header: "Od czego zaczynamy wdrożenie obowiązków IOD",
-  subtitle: "3 kroki do przekazania funkcji Inspektora Ochrony Danych",
+  heading: "Od czego zaczynamy wdrożenie obowiązków IOD",
+  subHeader: "3 kroki do przekazania funkcji Inspektora Ochrony Danych",
   items: [
     "Dokładnie określimy sytuację wyjściową – przeprowadzimy audyt",
     "Ocenimy skutki dla ochrony danych i ryzyko",
@@ -545,7 +545,7 @@ export const iodTeamContacts: IodTeamContactsSection = {
   formHeader: "Skorzystaj z formularza",
   formImage: "/images/odo24-zapytaj-o-oferte-formularz-new.gif",
   formAlt: "odo24-zapytaj-o-oferte-formularz-new",
-  formctaLabel: "Skontaktuj się",
+  formCtaLabel: "Skontaktuj się",
   formDescription:
     "Administratorem przesłanych danych osobowych będzie ODO 24 sp. z o.o. z siedzibą w Warszawie przy ul. Kamionkowskiej 45. Twoje dane będą przetwarzane w celu przygotowania, przesłania oraz archiwizacji oferty współpracy. Więcej informacji na ten temat znajduje się w",
   formLink: "Polityce Prywatności",

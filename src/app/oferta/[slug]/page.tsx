@@ -11,7 +11,7 @@ import IodTestimonialsSection from "@/components/IodTestimonialsSection";
 import LogoSlider from "@/components/Logo-Slider";
 import IodCallToActionSection from "@/components/IodCallToActionSection";
 import IodFaqSection from "@/components/IodFaqSection";
-import IodGreatValue from "@/components/IodGreatestValueSection";
+import IodGreatestValue from "@/components/IodGreatestValueSection";
 import IodTeamContactsSection from "@/components/IodTeamContactsSection";
 
 export default function OutSourcing() {
@@ -30,7 +30,7 @@ export default function OutSourcing() {
       <LogoSlider />
       <IodCallToActionSection />
       <IodFaqSection />
-      <IodGreatValue />
+      <IodGreatestValue />
       <IodTeamContactsSection />
     </main>
   );
