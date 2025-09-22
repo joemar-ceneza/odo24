@@ -4,9 +4,9 @@ import Link from "next/link";
 
 export default function IodCallToActionSection() {
   const hasImage = Boolean(iodCallToAction.image);
-  const hasHeading = Boolean(iodCallToAction.heading);
-  const hasDescription = Boolean(iodCallToAction.description);
-  const hasCtaLabel = Boolean(iodCallToAction.ctaLabel && iodCallToAction.link);
+  const hasHeading = Boolean(iodCallToAction.title);
+  const hasDescription = Boolean(iodCallToAction.subText);
+  const hasCtaLabel = Boolean(iodCallToAction.cta.ctaLabel && iodCallToAction.cta.ctaUrl);
 
   const hasContent = hasImage || hasHeading || hasDescription || hasCtaLabel;
 
@@ -26,13 +26,13 @@ export default function IodCallToActionSection() {
             className="inline-block"
           />
         )}
-        {hasHeading && <p className="text-2xl font-bold my-8">{iodCallToAction.heading}</p>}
-        {hasDescription && <p className="my-8">{iodCallToAction.description}</p>}
+        {hasHeading && <p className="text-2xl font-bold my-8">{iodCallToAction.title}</p>}
+        {hasDescription && <p className="my-8">{iodCallToAction.subText}</p>}
         {hasCtaLabel && (
           <Link
-            href={iodCallToAction.link}
+            href={iodCallToAction.cta.ctaUrl}
             className="bg-sky-600 hover:bg-sky-700 text-white font-medium px-6 py-2 rounded-full transition duration-300">
-            {iodCallToAction.ctaLabel}
+            {iodCallToAction.cta.ctaLabel}
           </Link>
         )}
       </div>

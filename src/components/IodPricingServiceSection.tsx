@@ -3,17 +3,17 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function IodPricingServiceSection() {
-  const hasHeading = Boolean(iodPricingService.heading);
-  const hasDescription = Boolean(iodPricingService.description);
-  const hasSubHeading = Boolean(iodPricingService.subHeading);
+  const hasHeading = Boolean(iodPricingService.title);
+  const hasDescription = Boolean(iodPricingService.subText);
+  const hasSubHeading = Boolean(iodPricingService.subHeader);
   const hasImage = Boolean(iodPricingService.image);
-  const hasCostComponentsHeading = Boolean(iodPricingService.costComponentsHeading);
+  const hasCostComponentsHeading = Boolean(iodPricingService.costComponentsTitle);
   const hasCostComponents = Boolean(iodPricingService.costComponents);
   const hasFootNote = Boolean(iodPricingService.footNote);
   const hasSource = Boolean(iodPricingService.source.label && iodPricingService.source.url);
   const hasLastUpdate = Boolean(iodPricingService.lastUpdate);
   const hasFooter = Boolean(iodPricingService.footer);
-  const hasCtaLabel = Boolean(iodPricingService.ctaLabel && iodPricingService.link);
+  const hasCtaLabel = Boolean(iodPricingService.cta.ctaLabel && iodPricingService.cta.ctaUrl);
 
   const hasContent =
     hasHeading ||
@@ -35,9 +35,9 @@ export default function IodPricingServiceSection() {
   return (
     <section className="py-10">
       <div className="max-w-[1060px] mx-auto px-5">
-        {hasHeading && <h2 className="text-3xl font-bold text-gray-600">{iodPricingService.heading}</h2>}
-        {hasDescription && <p className="py-3">{iodPricingService.description}</p>}
-        {hasSubHeading && <p className="text-[22px] font-bold text-gray-600 py-3">{iodPricingService.subHeading}</p>}
+        {hasHeading && <h2 className="text-3xl font-bold text-gray-600">{iodPricingService.title}</h2>}
+        {hasDescription && <p className="py-3">{iodPricingService.subText}</p>}
+        {hasSubHeading && <p className="text-[22px] font-bold text-gray-600 py-3">{iodPricingService.subHeader}</p>}
         {hasImage && (
           <Image
             src={iodPricingService.image}
@@ -48,7 +48,7 @@ export default function IodPricingServiceSection() {
           />
         )}
         <div className="my-5">
-          {hasCostComponentsHeading && <p className="font-bold">{iodPricingService.costComponentsHeading}</p>}
+          {hasCostComponentsHeading && <p className="font-bold">{iodPricingService.costComponentsTitle}</p>}
           {hasCostComponents && (
             <ul className="flex flex-wrap gap-x-6 gap-y-4 my-5">
               {iodPricingService.costComponents.map((label, index) => (
@@ -77,9 +77,9 @@ export default function IodPricingServiceSection() {
           {hasFooter && <p>{iodPricingService.footer}</p>}
           {hasCtaLabel && (
             <Link
-              href={iodPricingService.link}
-              className="bg-sky-600 hover:bg-sky-700 text-white font-medium px-6 py-2 rounded-full transition duration-300 max-lg:mt-5">
-              {iodPricingService.ctaLabel}
+              href={iodPricingService.cta.ctaUrl}
+              className="bg-sky-600 hover:bg-sky-700 text-white font-medium px-6 py-2 rounded-full transition duration-300 max-lg:mt-5 uppercase">
+              {iodPricingService.cta.ctaLabel}
             </Link>
           )}
         </div>

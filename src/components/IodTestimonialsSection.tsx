@@ -30,7 +30,7 @@ export default function IodTestimonialsSection() {
                   <Image src={testimonial.avatar} alt="" width={60} height={60} className="rounded-full ml-5" />
                 </div>
                 <hr className="border-t border-white my-5" />
-                <h3 className="text-lg font-bold my-3">{testimonial.subtitle}</h3>
+                <h3 className="text-lg font-bold my-3">{testimonial.subHeader}</h3>
                 <p className="italic">{testimonial.quote}</p>
                 <div className="flex my-7">
                   <p>

@@ -1,12 +1,12 @@
 "use client";
 
-import { iodFaqHeader, iodFaq } from "@/lib/iod-data";
+import { iodFaq } from "@/lib/iod-data";
 import Image from "next/image";
 import { useState } from "react";
 
 export default function IodFaqSection() {
-  const hasIcon = Boolean(iodFaqHeader.icon);
-  const hasHeader = Boolean(iodFaqHeader.header);
+  const hasIcon = Boolean(iodFaq.image);
+  const hasHeader = Boolean(iodFaq.title);
   const hasFaq = Array.isArray(iodFaq) && iodFaq.length > 0;
 
   const hasContent = hasIcon || hasHeader || hasFaq;
@@ -33,20 +33,16 @@ export default function IodFaqSection() {
     <section>
       <div className="max-w-full mx-auto bg-gray-200 px-5">
         <div className="max-w-[1060px] mx-auto flex items-center py-10 max-md:flex-col">
-          {hasIcon && (
-            <Image src={iodFaqHeader.icon} alt={iodFaqHeader.alt} width={90} height={90} className="object-contain" />
-          )}
+          {hasIcon && <Image src={iodFaq.image} alt={iodFaq.alt} width={90} height={90} className="object-contain" />}
           {hasHeader && (
-            <h2 className="text-4xl font-bold text-gray-600 pl-7 max-md:mt-5 max-md:text-center">
-              {iodFaqHeader.header}
-            </h2>
+            <h2 className="text-4xl font-bold text-gray-600 pl-7 max-md:mt-5 max-md:text-center">{iodFaq.title}</h2>
           )}
         </div>
       </div>
       {hasFaq && (
         <div className="max-w-[1060px] mx-auto px-5">
           <div className="space-y-4">
-            {iodFaq.map((item, idx) => {
+            {iodFaq.faqs.map((item, idx) => {
               const isOpen = openItems.has(idx);
               return (
                 <div

@@ -34,7 +34,7 @@ export default function LogoSlider() {
           <SwiperSlide key={idx}>
             <div className="flex items-center justify-center p-4 h-20">
               <Image
-                src={item.src}
+                src={item.image}
                 alt={item.alt}
                 width={120}
                 height={60}

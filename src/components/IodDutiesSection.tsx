@@ -2,7 +2,7 @@ import { iodDuties } from "@/lib/iod-data";
 import Image from "next/image";
 
 export default function IodDutiesSection() {
-  const hasHeading = Boolean(iodDuties.heading);
+  const hasHeading = Boolean(iodDuties.title);
   const hasImage = Boolean(iodDuties.image);
   const hasSubHeader = Boolean(iodDuties.subHeader);
   const hasItems = Boolean(iodDuties.items);
@@ -16,7 +16,7 @@ export default function IodDutiesSection() {
   return (
     <section className="py-16 max-sm:py-5">
       <div className="max-w-[1060px] mx-auto px-5">
-        {hasHeading && <h2 className="text-gray-600 text-3xl font-bold my-10">{iodDuties.heading}</h2>}
+        {hasHeading && <h2 className="text-gray-600 text-3xl font-bold my-10">{iodDuties.title}</h2>}
         <div className="flex justify-between items-center max-md:flex-col">
           {hasImage && <Image src={iodDuties.image} alt={iodDuties.alt} width={500} height={500} />}
           <div className="w-1/2 px-5 max-md:w-full max-md:my-5">

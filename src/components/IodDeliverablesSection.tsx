@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function IodDeliverablesSection() {
   const hasImage = Boolean(iodDeliverables.image);
-  const hasHeading = Boolean(iodDeliverables.heading);
+  const hasHeading = Boolean(iodDeliverables.title);
   const hasBullets = Boolean(iodDeliverables.bullets);
 
   const hasContent = hasImage || hasHeading || hasBullets;
@@ -20,7 +20,7 @@ export default function IodDeliverablesSection() {
         )}
 
         <div className="px-3 py-3">
-          {hasHeading && <h2 className="text-3xl font-bold my-3 max-lg:text-center">{iodDeliverables.heading}</h2>}
+          {hasHeading && <h2 className="text-3xl font-bold my-3 max-lg:text-center">{iodDeliverables.title}</h2>}
           {hasBullets && (
             <ul className="space-y-4 py-3 pl-2">
               {iodDeliverables.bullets.map((item, idx) => (

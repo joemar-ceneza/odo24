@@ -2,8 +2,8 @@ import { iodDataProtection } from "@/lib/iod-data";
 import Image from "next/image";
 
 export default function IodDataProtectionSection() {
-  const hasHeading = Boolean(iodDataProtection.heading);
-  const hasDescription = Boolean(iodDataProtection.description);
+  const hasHeading = Boolean(iodDataProtection.title);
+  const hasDescription = Boolean(iodDataProtection.subText);
   const hasItems = Array.isArray(iodDataProtection.items);
   const hasImage = Boolean(iodDataProtection.image);
 
@@ -17,8 +17,8 @@ export default function IodDataProtectionSection() {
     <section>
       <div className="max-w-[1030px] flex justify-between items-center mx-auto px-5 max-lg:flex-col">
         <div>
-          {hasHeading && <p className="text-3xl font-bold text-gray-600 my-5">{iodDataProtection.heading}</p>}
-          {hasDescription && <p className="my-5">{iodDataProtection.description}</p>}
+          {hasHeading && <p className="text-3xl font-bold text-gray-600 my-5">{iodDataProtection.title}</p>}
+          {hasDescription && <p className="my-5">{iodDataProtection.subText}</p>}
           {hasItems && (
             <ul className="space-y-4">
               {iodDataProtection.items.map((item, idx) => (

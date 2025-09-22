@@ -3,8 +3,8 @@ import Image from "next/image";
 
 export default function IodDeliverablesSection() {
   const hasImage = Boolean(iodScope.image);
-  const hasHeading = Boolean(iodScope.heading);
-  const hasDescription = Boolean(iodScope.description);
+  const hasHeading = Boolean(iodScope.title);
+  const hasDescription = Boolean(iodScope.subText);
   const hasBullets = Array.isArray(iodScope.bullets);
 
   const hasContent = hasImage || hasHeading || hasDescription || hasBullets;
@@ -21,8 +21,8 @@ export default function IodDeliverablesSection() {
         )}
 
         <div className="px-3 py-3">
-          {hasHeading && <h2 className="text-3xl font-bold my-3 max-lg:text-center">{iodScope.heading}</h2>}
-          {hasDescription && <p className="mb-6 leading-relaxed">{iodScope.description}</p>}
+          {hasHeading && <h2 className="text-3xl font-bold my-3 max-lg:text-center">{iodScope.title}</h2>}
+          {hasDescription && <p className="mb-6 leading-relaxed">{iodScope.subText}</p>}
           {hasBullets && (
             <ul className="space-y-4 py-3 pl-2">
               {iodScope.bullets.map((item, idx) => (

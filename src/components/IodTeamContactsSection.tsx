@@ -3,14 +3,14 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function IodTeamContactsSection() {
-  const hasHeading = Boolean(iodTeamContacts.heading);
-  const hasDescription = Boolean(iodTeamContacts.description);
+  const hasHeading = Boolean(iodTeamContacts.title);
+  const hasDescription = Boolean(iodTeamContacts.subText);
   const hasContacts = Boolean(iodTeamContacts.contacts);
   const hasFormHeader = Boolean(iodTeamContacts.formHeader);
   const hasFormImage = Boolean(iodTeamContacts.formImage);
   const hasCtaLabel = Boolean(iodTeamContacts.formCtaLabel);
-  const hasFormDescription = Boolean(iodTeamContacts.formDescription);
-  const hasFormLink = Boolean(iodTeamContacts.formLink);
+  const hasFormDescription = Boolean(iodTeamContacts.formSubText);
+  const hasFormLink = Boolean(iodTeamContacts.formUrl);
 
   const hasContent =
     hasHeading ||
@@ -30,8 +30,8 @@ export default function IodTeamContactsSection() {
     <section className="bg-sky-950 text-white">
       <div className="max-w-[1060px] mx-auto flex justify-between py-10 px-5 max-lg:flex-col max-lg:text-center">
         <div>
-          {hasHeading && <h2 className="text-2xl font-bold">{iodTeamContacts.heading}</h2>}
-          {hasDescription && <p className="my-5">{iodTeamContacts.description}</p>}
+          {hasHeading && <h2 className="text-2xl font-bold">{iodTeamContacts.title}</h2>}
+          {hasDescription && <p className="my-5">{iodTeamContacts.subText}</p>}
           {hasContacts && (
             <div className="my-12 pl-16 max-lg:pl-0">
               {iodTeamContacts.contacts.map((item, idx) => (
@@ -58,8 +58,8 @@ export default function IodTeamContactsSection() {
             {hasFormHeader && <h3 className="text-2xl text-gray-600 font-bold pt-8">{iodTeamContacts.formHeader}</h3>}
             {hasFormImage && (
               <Image
-                src={iodTeamContacts.formImage}
-                alt={iodTeamContacts.formAlt}
+                src={iodTeamContacts.formImage.image}
+                alt={iodTeamContacts.formImage.alt}
                 width={150}
                 height={150}
                 className="-mt-16 max-lg:mt-0"
@@ -102,8 +102,7 @@ export default function IodTeamContactsSection() {
           <div className="text-gray-500 text-sm mt-10">
             {hasFormDescription && hasFormLink && (
               <p>
-                {iodTeamContacts.formDescription}{" "}
-                <span className="text-sky-600 font-bold">{iodTeamContacts.formLink}</span>{" "}
+                {iodTeamContacts.formSubText} <span className="text-sky-600 font-bold">{iodTeamContacts.formUrl}</span>{" "}
               </p>
             )}
           </div>

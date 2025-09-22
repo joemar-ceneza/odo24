@@ -2,7 +2,7 @@ import { iodGreatestValue } from "@/lib/iod-data";
 import Image from "next/image";
 
 export default function IodGreatestValue() {
-  const hasHeading = Boolean(iodGreatestValue.heading);
+  const hasHeading = Boolean(iodGreatestValue.title);
   const hasImage1 = Boolean(iodGreatestValue.image1);
   const hasImage2 = Boolean(iodGreatestValue.image2);
 
@@ -16,7 +16,7 @@ export default function IodGreatestValue() {
     <section className="mt-16">
       <div className="max-w-[1060px] mx-auto px-5">
         {hasHeading && (
-          <h2 className="text-3xl font-bold text-gray-600 my-5 max-lg:text-center">{iodGreatestValue.heading}</h2>
+          <h2 className="text-3xl font-bold text-gray-600 my-5 max-lg:text-center">{iodGreatestValue.title}</h2>
         )}
 
         <div className="flex pt-10 justify-center items-start max-lg:flex-col  max-lg:items-center">
