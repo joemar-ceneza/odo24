@@ -109,10 +109,6 @@ export interface IodCallToActionSection extends ImageWithAlt {
   cta: CTA;
 }
 
-export interface IodFaqHeaderSection extends ImageWithAlt {
-  header: string;
-}
-
 export interface IodFaqSection {
   image: string;
   alt: string;

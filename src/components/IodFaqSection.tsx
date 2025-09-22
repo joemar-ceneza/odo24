@@ -7,7 +7,7 @@ import { useState } from "react";
 export default function IodFaqSection() {
   const hasIcon = Boolean(iodFaq.image);
   const hasHeader = Boolean(iodFaq.title);
-  const hasFaq = Array.isArray(iodFaq) && iodFaq.length > 0;
+  const hasFaq = Array.isArray(iodFaq.faqs) && iodFaq.faqs.length > 0;
 
   const hasContent = hasIcon || hasHeader || hasFaq;
 
@@ -53,12 +53,12 @@ export default function IodFaqSection() {
                   className="border-b border-b-gray-300 cursor-pointer">
                   <button className="w-full px-6 text-left cursor-pointer">
                     <div>
-                      <h2 className="text-2xl font-bold text-sky-600 my-5">
+                      <h3 className="text-2xl font-bold text-sky-600 my-5">
                         <span className="pr-5" aria-hidden="true">
                           {isOpen ? "-" : "+"}
                         </span>
                         {item.question}
-                      </h2>
+                      </h3>
                     </div>
                   </button>
                   <div
