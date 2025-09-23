@@ -11,11 +11,11 @@ export default function IodFaqSection() {
 
   const hasContent = hasIcon || hasHeader || hasFaq;
 
+  const [openItems, setOpenItems] = useState<Set<number>>(new Set());
+
   if (!hasContent) {
     return null;
   }
-
-  const [openItems, setOpenItems] = useState<Set<number>>(new Set());
 
   const toggleItem = (index: number) => {
     setOpenItems((prev) => {
