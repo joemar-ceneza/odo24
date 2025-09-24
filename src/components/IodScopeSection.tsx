@@ -5,7 +5,7 @@ export default function IodDeliverablesSection() {
   const hasImage = Boolean(scope.image);
   const hasHeading = Boolean(scope.title);
   const hasDescription = Boolean(scope.subText);
-  const hasBullets = Array.isArray(scope.bullets);
+  const hasBullets = Array.isArray(scope.items);
 
   const hasContent = hasImage || hasHeading || hasDescription || hasBullets;
 
@@ -25,7 +25,7 @@ export default function IodDeliverablesSection() {
           {hasDescription && <p className="mb-6 leading-relaxed">{scope.subText}</p>}
           {hasBullets && (
             <ul className="space-y-4 py-3 pl-2">
-              {scope.bullets.map((item, idx) => (
+              {scope.items.map((item, idx) => (
                 <li key={idx} className="flex items-start gap-3">
                   <Image src="/images/icon-check-white.svg" alt="icon-check-white" width={25} height={25} />
                   <span>{item}</span>

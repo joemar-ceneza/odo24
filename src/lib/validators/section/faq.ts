@@ -1,12 +1,14 @@
 import { ImageWithAlt } from "@/lib/base";
 
+// Individual FAQ item with question and answer
 export interface IodFaq {
-  question: string;
-  answer: string;
-  id?: string;
+  readonly question: string;
+  readonly answer: string;
+  readonly id?: string;
 }
 
+// FAQ section configuration with title and list of questions
 export interface IodFaqSection extends ImageWithAlt {
-  title: string;
-  faqs: IodFaq[];
+  readonly title: string;
+  readonly faqs: readonly IodFaq[];
 }

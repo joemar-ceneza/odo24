@@ -1,12 +1,14 @@
 import { Contact, ImageWithAlt } from "@/lib/base";
 
+// Team contact section with team members and contact form promotion
+// Used for about pages and contact sections
 export interface IodTeamContactsSection {
-  title: string;
-  subText: string;
-  contacts: Contact[];
-  formHeader: string;
-  formImage: ImageWithAlt;
-  formCtaLabel: string;
-  formSubText: string;
-  formUrl: string;
+  readonly title: string;
+  readonly subText: string;
+  readonly contacts: Contact[];
+  readonly formHeader: string;
+  readonly formImage: ImageWithAlt;
+  readonly formCtaLabel: string;
+  readonly formSubText: string;
+  readonly formUrl: string;
 }

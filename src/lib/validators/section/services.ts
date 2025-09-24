@@ -1,8 +1,9 @@
 import { CTA } from "@/lib/base";
 
+// Services overview section with two-column service lists
 export interface IodOdo24ServiceSection {
-  title: string;
-  leftColumn: string[];
-  rightColumn: string[];
-  cta: CTA;
+  readonly title: string;
+  readonly leftColumn: string[];
+  readonly rightColumn: string[];
+  readonly cta: CTA;
 }

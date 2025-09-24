@@ -1,24 +1,33 @@
 import { Email, PhoneNumber, Url } from "./brand";
 
+/**
+ * Represents an image with required alt text for accessibility
+ */
 export interface ImageWithAlt {
-  image: string;
-  alt: string;
+  readonly image: string;
+  readonly alt: string;
 }
 
+/**
+ * Call-to-action configuration for buttons and links
+ */
 export interface CTA {
-  ctaLabel: string;
-  ctaUrl: string;
+  readonly ctaLabel: string;
+  readonly ctaUrl: string;
 }
 
+/**
+ * Contact information with profile image
+ */
 export interface Contact extends ImageWithAlt {
-  name: string;
-  phone: PhoneNumber;
-  email: Email;
+  readonly name: string;
+  readonly phone: PhoneNumber;
+  readonly email: Email;
 }
 
 export interface Link {
-  label: string;
-  url: Url;
+  readonly label: string;
+  readonly url: Url;
 }
 
 export const url = (value: string): Url => value as Url;

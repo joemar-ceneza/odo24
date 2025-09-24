@@ -1,15 +1,17 @@
 import { Link } from "@/lib/base";
 
+// Customer testimonial with company context and services used
+// Used for social proof and credibility building
 export interface IodTestimonialsSection {
-  title: string;
-  testimonials: {
-    name: string;
-    company: string;
-    companyUrl: string;
-    avatar: string;
-    subHeader: string;
-    quote: string;
-    servicesLabel: string;
-    services: Link[];
+  readonly title: string;
+  readonly testimonials: {
+    readonly name: string;
+    readonly company: string;
+    readonly companyUrl: string;
+    readonly avatar: string;
+    readonly subHeader: string;
+    readonly quote: string;
+    readonly servicesLabel: string;
+    readonly services: Link[];
   }[];
 }
