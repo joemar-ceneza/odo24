@@ -1,5 +1,5 @@
 import { IodTeamContactsSection } from "@/lib/validators/section/team-contacts";
-import { email, phoneNumber } from "@/lib/base";
+import { email, phoneNumber, url } from "@/lib/base";
 
 export const teamContacts: IodTeamContactsSection = {
   title: "W czym Ci możemy pomóc?",
@@ -28,5 +28,5 @@ export const teamContacts: IodTeamContactsSection = {
   formCtaLabel: "Skontaktuj się",
   formSubText:
     "Administratorem przesłanych danych osobowych będzie ODO 24 sp. z o.o. z siedzibą w Warszawie przy ul. Kamionkowskiej 45. Twoje dane będą przetwarzane w celu przygotowania, przesłania oraz archiwizacji oferty współpracy. Więcej informacji na ten temat znajduje się w",
-  formUrl: "https://www.google.com/",
+  formUrl: url("https://www.google.com/"),
 };
