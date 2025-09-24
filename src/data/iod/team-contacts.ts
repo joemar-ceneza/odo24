@@ -28,5 +28,5 @@ export const teamContacts: IodTeamContactsSection = {
   formCtaLabel: "Skontaktuj się",
   formSubText:
     "Administratorem przesłanych danych osobowych będzie ODO 24 sp. z o.o. z siedzibą w Warszawie przy ul. Kamionkowskiej 45. Twoje dane będą przetwarzane w celu przygotowania, przesłania oraz archiwizacji oferty współpracy. Więcej informacji na ten temat znajduje się w",
-  formUrl: "Polityce Prywatności",
+  formUrl: "https://www.google.com/",
 };

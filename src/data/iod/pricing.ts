@@ -1,4 +1,5 @@
 import { IodPricingServiceSection } from "@/lib/validators/section/pricing";
+import { url } from "@/lib/base";
 
 export const pricingServices: IodPricingServiceSection = {
   image: "/images/outsourcing-rodo-iod-cena.svg",
@@ -25,12 +26,12 @@ export const pricingServices: IodPricingServiceSection = {
   footNote: "Źródło informacji o wynagrodzeniu na stanowisku inspektora danych osobowych:",
   source: {
     label: " wynagrodzenia.pl",
-    url: "https://www.google.com/",
+    url: url("https://www.google.com/"),
   },
   lastUpdate: "Ostatnia aktualizacja: styczeń 2025",
   footer: "Jeżeli chcesz skalkulować koszt miesięczny usługi, to warto porozmawiać z naszym doradcą.",
   cta: {
     ctaLabel: "Skontaktuj się",
-    ctaUrl: "https://www.google.com/",
+    ctaUrl: url("https://www.google.com/"),
   },
 };

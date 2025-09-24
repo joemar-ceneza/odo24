@@ -1,4 +1,5 @@
 import { IodOdo24ServiceSection } from "@/lib/validators/section/services";
+import { url } from "@/lib/base";
 
 export const services: IodOdo24ServiceSection = {
   title: "Usługa IOD – jak ODO 24 rozwiązuje Twoje problemy",
@@ -14,6 +15,6 @@ export const services: IodOdo24ServiceSection = {
   ],
   cta: {
     ctaLabel: "Zapytaj o ofertę",
-    ctaUrl: "https://www.google.com/",
+    ctaUrl: url("https://www.google.com/"),
   },
 };

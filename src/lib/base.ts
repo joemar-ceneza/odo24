@@ -13,7 +13,7 @@ export interface ImageWithAlt {
  */
 export interface CTA {
   readonly ctaLabel: string;
-  readonly ctaUrl: string;
+  readonly ctaUrl: Url;
 }
 
 /**

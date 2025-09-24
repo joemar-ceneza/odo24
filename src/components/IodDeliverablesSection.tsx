@@ -1,4 +1,4 @@
-import { deliverables } from "@/data/iod/deliverable";
+import { deliverables } from "@/data/iod/deliverables";
 import Image from "next/image";
 
 export default function IodDeliverablesSection() {

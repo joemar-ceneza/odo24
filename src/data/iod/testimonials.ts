@@ -18,7 +18,7 @@ export const testimonials: IodTestimonialsSection = {
     {
       name: "Tomasz Siwicki",
       company: "Gefco",
-      companyUrl: "https://www.google.com/",
+      companyUrl: url("https://www.google.com/"),
       avatar: "/images/foto-gefco.jpg",
       subHeader: `"Polecam Państwu firmę ODO 24, jako profesjonalnego partnera"`,
       quote:
@@ -29,7 +29,7 @@ export const testimonials: IodTestimonialsSection = {
     {
       name: "Wojciech Kmiecik",
       company: "Szlachetna Paczka",
-      companyUrl: "https://www.google.com/",
+      companyUrl: url("https://www.google.com/"),
       avatar: "/images/foto_szlachetnapaczka.jpg",
       subHeader: `"ODO 24 sp. z o.o. to eksperci od ochrony danych osobowych i godny naśladowania przykład"`,
       quote:
@@ -40,7 +40,7 @@ export const testimonials: IodTestimonialsSection = {
     {
       name: "Wiesław Chojnacki",
       company: "Dressler sp. z o.o.",
-      companyUrl: "https://www.google.com/",
+      companyUrl: url("https://www.google.com/"),
       avatar: "/images/wie-cho-dress.jpg",
       subHeader: `"Z przyjemnością rekomenduję ODO 24, jako rzetelnego partnera i polecam innym"`,
       quote:

@@ -1,4 +1,5 @@
 import { IodOutSourcingSection } from "@/lib/validators/section/outsourcing";
+import { url } from "@/lib/base";
 
 export const outSourcing: IodOutSourcingSection = {
   title: "Kiedy warto pomyśleć o outsourcingu IOD",
@@ -19,6 +20,6 @@ export const outSourcing: IodOutSourcingSection = {
   footerText: "Jeżeli borykasz się z takimi problemami, to warto porozmawiać z naszym doradcą.",
   cta: {
     ctaLabel: "Skontaktuj się z doradcą",
-    ctaUrl: "https://www.google.com/",
+    ctaUrl: url("https://www.google.com/"),
   },
 };
