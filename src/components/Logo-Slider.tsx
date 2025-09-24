@@ -1,6 +1,6 @@
 "use client";
 
-import { logoSlider } from "@/lib/iod-data";
+import { logoSlider } from "@/data/iod/logos";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";

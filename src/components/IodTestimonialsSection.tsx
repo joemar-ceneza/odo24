@@ -1,10 +1,10 @@
-import { iodTestimonialsHeader, iodTestimonials } from "@/lib/iod-data";
+import { testimonials } from "@/data/iod/testimonials";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function IodTestimonialsSection() {
-  const hasHeading = typeof iodTestimonialsHeader === "string" && iodTestimonialsHeader.trim().length > 0;
-  const hasTestimonials = Array.isArray(iodTestimonials) && iodTestimonials.length > 0;
+  const hasHeading = typeof testimonials?.title === "string" && testimonials.title.trim().length > 0;
+  const hasTestimonials = Array.isArray(testimonials?.testimonials) && testimonials.testimonials.length > 0;
 
   const hasContent = hasHeading || hasTestimonials;
 
@@ -13,11 +13,11 @@ export default function IodTestimonialsSection() {
   return (
     <section>
       <div className="max-w-[1060px] mx-auto px-5">
-        {hasHeading && <h2 className="text-3xl text-gray-600 font-bold my-5">{iodTestimonialsHeader}</h2>}
+        {hasHeading && <h2 className="text-3xl text-gray-600 font-bold my-5">{testimonials.title}</h2>}
 
         {hasTestimonials && (
           <div className="grid grid-cols-2 gap-6 py-7 max-md:grid-cols-1">
-            {iodTestimonials.map((testimonial, idx) => (
+            {testimonials.testimonials.map((testimonial, idx) => (
               <article key={idx} className="bg-gray-200 rounded-3xl p-5">
                 <div className="flex justify-end items-center my-5">
                   <p>
