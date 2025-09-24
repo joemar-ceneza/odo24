@@ -5,7 +5,7 @@ import { Contact, ImageWithAlt } from "@/lib/base";
 export interface IodTeamContactsSection {
   readonly title: string;
   readonly subText: string;
-  readonly contacts: Contact[];
+  readonly contacts: readonly Contact[];
   readonly formHeader: string;
   readonly formImage: ImageWithAlt;
   readonly formCtaLabel: string;

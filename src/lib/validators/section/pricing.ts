@@ -7,7 +7,7 @@ export interface IodPricingServiceSection extends ImageWithAlt {
   readonly subText: string;
   readonly subHeader: string;
   readonly costComponentsTitle: string;
-  readonly costComponents: string[];
+  readonly costComponents: readonly string[];
   readonly footNote: string;
   readonly source: {
     readonly label: string;

@@ -4,7 +4,7 @@ import { Link } from "@/lib/base";
 // Used for social proof and credibility building
 export interface IodTestimonialsSection {
   readonly title: string;
-  readonly testimonials: {
+  readonly testimonials: readonly {
     readonly name: string;
     readonly company: string;
     readonly companyUrl: string;
@@ -12,6 +12,6 @@ export interface IodTestimonialsSection {
     readonly subHeader: string;
     readonly quote: string;
     readonly servicesLabel: string;
-    readonly services: Link[];
+    readonly services: readonly Link[];
   }[];
 }
